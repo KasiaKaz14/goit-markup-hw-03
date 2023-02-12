@@ -75,15 +75,23 @@ body {
   color: var(--secondary-font-color, #2196f3);
 }
 
-.page {
+.navigation-list {
   display: flex;
   flex-direction: row;
-  gap: 32px;
+  gap: 46px;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: row;
+  gap: 46px;
+  margin-left: auto;
 }
 
 .list-item {
   list-style-type: none;
-  gap: 30px;
 }
 
 .item {
@@ -97,8 +105,8 @@ body {
 
 .main {
   background-color: var(--background-footer-color, #21303a);
-  width: 1600px;
-  height: 600px;
+  padding: 200px 0;
+  text-align: center;
 }
 
 .main-header {
@@ -108,24 +116,27 @@ body {
   line-height: 1.4;
   letter-spacing: 0.06em;
   width: 696px;
-  height: 120px;
+  text-align: center;
   margin-bottom: 30px;
-
-  padding: 200px auto;
-  display: flex;
+  margin: 0 auto;
 }
 
 .main-button {
-  background-color: var(--background-button-color, #2196f3);
-  width: 200px;
+  background-color: var(--buttons-port-color, #f5f4fa);
+  min-width: 200px;
   height: 50px;
   cursor: pointer;
   border: none;
   border-radius: 4px;
 }
 
+.main-button:hover,
+.main-button:focus {
+  color: var(--background-button-color, #2196f3);
+}
+
 .button-text {
-  color: var(--secondary-text-color, #ffffff);
+  color: var(--main-text-color, #212121);
   font-family: var(--main-font, "Roboto", sans-serif);
   font-weight: 700;
   font-size: 16px;
@@ -135,7 +146,7 @@ body {
 
 .button-text:hover,
 .button-text:focus {
-  color: var(--secondary-font-color, #2196f3);
+  background-color: var(--secondary-text-color, #ffffff);
 }
 
 .header {
@@ -173,8 +184,6 @@ body {
 
 .team {
   background-color: var(--team-background-color, #f5f4fa);
-  width: 1600px;
-  padding: 94px;
 }
 
 .team-members {
@@ -198,9 +207,7 @@ body {
 
 .main-footer {
   background-color: var(--background-footer-color, #2f303a);
-  width: 1600px;
   height: 252px;
-  left: 0px;
 }
 
 .part-logo {
@@ -317,7 +324,7 @@ body {
 }
 
 .container {
-  width: 1600px;
+  width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -354,33 +361,34 @@ img {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 30px;
 }
 
 .section-two {
-  padding-bottom: 94px;
+  padding: 94px 215px;
   display: flex;
   flex-direction: row;
   align-content: center;
+  justify-content: center;
   gap: 30px;
 }
 
 .first-header {
-  width: 1600px;
   height: 80px;
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.logo {
-  width: 145px;
-  height: 31px;
-  margin-left: 215px;
 }
 
 address {
   margin-left: 215px;
+}
+
+.primary-header {
+  border-bottom: 1px solid #212121;
+}
+
+nav {
+  margin-left: 93px;
+  margin-right: 93px;
 }
