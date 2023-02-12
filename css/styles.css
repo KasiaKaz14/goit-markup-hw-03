@@ -132,7 +132,7 @@ body {
 
 .main-button:hover,
 .main-button:focus {
-  color: var(--background-button-color, #2196f3);
+  background-color: var(--background-button-color, #2196f3);
 }
 
 .button-text {
@@ -146,7 +146,7 @@ body {
 
 .button-text:hover,
 .button-text:focus {
-  background-color: var(--secondary-text-color, #ffffff);
+  color: var(--secondary-text-color, #ffffff);
 }
 
 .header {
@@ -205,9 +205,21 @@ body {
   text-align: center;
 }
 
+.image-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 110px;
+}
+
 .main-footer {
   background-color: var(--background-footer-color, #2f303a);
   height: 252px;
+
+  display: flex;
+  text-align: start;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 .part-logo {
@@ -223,7 +235,6 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 9px;
   margin-top: 20px;
-  text-align: center;
 }
 
 .digits:hover,
@@ -239,7 +250,6 @@ body {
   line-height: 1.7;
   letter-spacing: 0.03em;
   margin-bottom: 9px;
-  text-align: center;
 }
 
 .contact:hover,
@@ -358,6 +368,7 @@ img {
 
 .portfolio-section {
   margin-bottom: 94px;
+  width: 1200px;
 
   display: flex;
   flex-wrap: wrap;
@@ -365,7 +376,7 @@ img {
 }
 
 .section-two {
-  padding: 94px 215px;
+  padding: 94px;
   display: flex;
   flex-direction: row;
   align-content: center;
