@@ -71,7 +71,8 @@ body {
 }
 
 .pages:hover,
-.pages:focus {
+.pages:focus,
+.pages:active {
   color: var(--secondary-font-color, #2196f3);
 }
 
