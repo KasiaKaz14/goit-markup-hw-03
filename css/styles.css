@@ -87,7 +87,16 @@ body {
   display: flex;
   flex-direction: row;
   gap: 46px;
+  margin: 0;
+  padding: 0;
   margin-left: auto;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .list-item {
@@ -97,7 +106,6 @@ body {
 .item {
   background-color: var(--background-color, #ffffff);
   width: 270px;
-  height: 368px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -117,12 +125,12 @@ body {
   letter-spacing: 0.06em;
   width: 696px;
   text-align: center;
-  margin-bottom: 30px;
   margin: 0 auto;
+  margin-bottom: 30px;
 }
 
 .main-button {
-  background-color: var(--buttons-port-color, #f5f4fa);
+  background-color: var(--background-button-color, #2196f3);
   min-width: 200px;
   height: 50px;
   cursor: pointer;
@@ -132,11 +140,11 @@ body {
 
 .main-button:hover,
 .main-button:focus {
-  background-color: var(--background-button-color, #2196f3);
+  background-color: var(--buttons-port-color, #f5f4fa);
 }
 
 .button-text {
-  color: var(--main-text-color, #212121);
+  color: var(--secondary-text-color, #ffffff);
   font-family: var(--main-font, "Roboto", sans-serif);
   font-weight: 700;
   font-size: 16px;
@@ -146,7 +154,7 @@ body {
 
 .button-text:hover,
 .button-text:focus {
-  color: var(--secondary-text-color, #ffffff);
+  color: var(--main-text-color, #212121);
 }
 
 .header {
@@ -155,6 +163,9 @@ body {
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
+  margin-top: 89px;
+  text-transform: uppercase;
 }
 
 .description {
@@ -184,6 +195,7 @@ body {
 
 .team {
   background-color: var(--team-background-color, #f5f4fa);
+  padding: 94px 0;
 }
 
 .team-members {
@@ -194,6 +206,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 .profession {
@@ -206,20 +219,14 @@ body {
 }
 
 .image-infos {
-  display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 110px;
+  padding: 30px;
 }
 
 .main-footer {
   background-color: var(--background-footer-color, #2f303a);
-  height: 252px;
-
-  display: flex;
-  text-align: start;
-  margin: 0 auto;
-  padding: 0 auto;
+  padding: 60px 0;
 }
 
 .part-logo {
@@ -268,6 +275,7 @@ body {
   border: none;
   width: 93px;
   height: 38px;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -307,7 +315,9 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  text-align: center;
+  text-align: start;
+  padding-left: 24px;
+  padding-top: 20px;
 }
 
 .page-name {
@@ -316,7 +326,8 @@ body {
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  text-align: center;
+  text-align: start;
+  padding-left: 24px;
 }
 
 .visually-hidden {
@@ -359,11 +370,6 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-
-  display: flex;
-  flex-direction: row;
-  gap: 30px;
-  align-items: space-around;
 }
 
 .portfolio-section {
@@ -376,12 +382,10 @@ img {
 }
 
 .section-two {
-  padding: 94px;
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
   gap: 30px;
+  margin: 0;
+  padding: 0;
 }
 
 .first-header {
@@ -392,10 +396,23 @@ img {
 }
 
 .primary-header {
-  border-bottom: 1px solid #212121;
+  border-bottom: 1px solid #21212113;
 }
 
 nav {
   margin-left: 93px;
-  margin-right: 93px;
+}
+
+.address {
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.address-item:not(last-child) {
+  margin-bottom: 9px;
+}
+
+.secondary-section {
+  padding: 94px 0;
 }
