@@ -165,7 +165,6 @@ body {
   line-height: 1.1;
   letter-spacing: 0.03em;
   margin-bottom: 10px;
-  margin-top: 89px;
   text-transform: uppercase;
 }
 
@@ -182,6 +181,10 @@ body {
   flex-direction: column;
   gap: 30px;
   padding: 94px;
+}
+
+.main-description {
+  padding-top: 89px;
 }
 
 .title {
@@ -274,9 +277,8 @@ body {
   letter-spacing: 0.03em;
   cursor: pointer;
   border: none;
-  width: 93px;
-  height: 38px;
-  margin-bottom: 50px;
+  padding: 6px 25px;
+  border-radius: 4px;
 }
 
 .button {
@@ -286,6 +288,9 @@ body {
   justify-content: center;
   align-items: center;
   gap: 8px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
 }
 
 .secondary-button:hover,
@@ -294,9 +299,7 @@ body {
 }
 
 .secondary-item {
-  background-color: var(--background-color, #ffffff);
   width: 370px;
-  height: 404px;
   border: 1px solid #eeeeee;
 }
 
@@ -329,6 +332,7 @@ body {
   letter-spacing: 0.03em;
   text-align: start;
   padding-left: 24px;
+  padding-bottom: 20px;
 }
 
 .visually-hidden {
@@ -373,17 +377,9 @@ img {
   padding-bottom: 94px;
 }
 
-.portfolio-section {
-  margin-bottom: 94px;
-  width: 1200px;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .section-two {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
   margin: 0;
   padding: 0;
@@ -404,16 +400,20 @@ nav {
   margin-left: 93px;
 }
 
-.address {
-  margin: 0;
-  padding: 0;
+address {
   margin-top: 20px;
 }
 
-.address-item:not(last-child) {
+.address {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.address-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
 .secondary-section {
-  padding: 94px 0;
+  padding: 94px 15px;
 }
